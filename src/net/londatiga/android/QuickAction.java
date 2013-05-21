@@ -2,6 +2,7 @@ package net.londatiga.android;
 
 import android.content.Context;
 
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
@@ -172,6 +173,11 @@ public class QuickAction extends PopupWindows implements OnDismissListener {
 		
 		if (title != null) {
 			text.setText(title);
+			
+			if (action.isSelected()) {
+				text.setTextColor(Color.RED);
+			}
+			
 		} else {
 			text.setVisibility(View.GONE);
 		}
