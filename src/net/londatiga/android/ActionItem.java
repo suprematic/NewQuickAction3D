@@ -13,6 +13,7 @@ import android.graphics.Bitmap;
  *
  */
 public class ActionItem {
+	private int selectedColor;
 	private Drawable icon;
 	private Bitmap thumb;
 	private String title;
@@ -69,6 +70,14 @@ public class ActionItem {
         this(actionId, null, icon);
     }
 	
+	public int getSelectedColor() {
+		return selectedColor;
+	}
+
+	public void setSelectedColor(int selectedColor) {
+		this.selectedColor = selectedColor;
+	}
+
 	/**
 	 * Set action title
 	 * 
