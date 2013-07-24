@@ -175,7 +175,7 @@ public class QuickAction extends PopupWindows implements OnDismissListener {
 			text.setText(title);
 			
 			if (action.isSelected()) {
-				text.setTextColor(Color.RED);
+				text.setTextColor(action.getSelectedColor());
 			}
 			
 		} else {
